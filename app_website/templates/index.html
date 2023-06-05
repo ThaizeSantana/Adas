@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{%static '/img/Icon Ada.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{%static '/style.css' %}">
+    <script src="https://kit.fontawesome.com/cb5b6e46d1.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Explore um mundo de entretenimento com o melhor do cinema e das séries voltado ao público feminino. Descubra as últimas novidades, assista aos trailers, leia resenhas e mergulhe em histórias emocionantes que vão cativar sua imaginação. ">
+    <meta name="keywords" content="series, filmes, animes, doramas, feminismo, mulheres, stream, trailers, resenhas">
+    <meta name="author" content="Danielle, Kauane, Bárbara, Thaize">
+    <title>Ada's Legacy</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img id="logoAda" src="{% static '/img/Logo Ada.png' %}">
+
+        </div>
+    </header>
+    
+    <div id="banner">
+        <video src="{%static '/img/background-video.mp4' %}" autoplay loop></video>
+        <div>
+            <a href="./login.html" target="_blank"><button>Faça Login</button></a>
+            <a href="./cadastro.html" target="_blank"><button>Cadastre-se</button></a>
+        </div>
+    </div>
+
+    <section id="planos">
+            <div class="plano-container">
+                <!-- <h1 class="titulo-planos">Escolha um dos nossos planos</h1> -->
+                <div class="plano">
+                    <p>Plano Beauvour</p>
+                    <ul>
+                        <li>Sem anúncio</li>
+                        <li>Suporta um dispositivo</li>
+                        <li>Qualidade máxima: 720HD</li>
+                        <li><span>Assista offline</span></li>
+                        <button>R$ 9,90</button>
+                    </ul>
+                </div>
+                <div class="plano">
+                    <p>Plano Davis</p>
+                    <ul>
+                        <li>Sem anúncio</li>
+                        <li>Suporta três dispositivos</li>
+                        <li>Qualidade máxima: 1080HD</li>
+                        <li>Assista offline</li>
+                        <button>R$ 16,50</button> 
+                    </ul>
+                </div>
+                <div class="plano">
+                        <p>Plano Lovelace</p>
+                        <ul>
+                            <li>Sem anúncio</li>
+                            <li>Suporta seis dispositivos</li>
+                            <li>Qualidade máxima: 4k</li>
+                            <li>Assista offline</li> 
+                            <button>R$ 29,90</button>
+                        </ul>
+                </div>
+            </div>
+        </section>
+
+    <section id="carrossel-imagens">
+        <!-- <h2 class="titulo-carrossel">Alguns dos filmes em catálogo</h2> -->
+           
+        <div class="slider">
+                <div class="slides">
+        <!-- Radio Button  -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+            <input type="radio" name="radio-btn" id="radio7">
+            <input type="radio" name="radio-btn" id="radio8">
+                    
+            <!-- Fim Radio Button  -->
+
+             <!-- carrossel-imagens -->
+            <div class="slide first">
+                <img src="{%static '/img/aruanas.png' %}" alt="imagem 1">
+            </div>
+
+            <div class="slide">
+                <img src="{%static '/img/mulher rei.png' %}" alt="imagem 2">
+            </div>
+
+
+            <div class="slide">
+                <img src="{%static '/img/Rainha do Sul.png' %}" alt="imagem 3">
+            </div>
+
+            <div class="slide">
+                <img src="{%static '/img/Adoraveis Mulheres.png' %}" alt="imagem 4">
+            </div>
+
+            <div class="slide">
+                <img src="{%static '/img/Oceans8.png' %}" alt="imagem 5">
+            </div>
+
+            <div class="slide">
+                <img src="{%static '/img/Brave.png' %}" alt="imagem 6">
+            </div>
+
+            <div class="slide">
+                <img src="{%static '/img/bomdia veronica 2.png' %}" alt="imagem 7">
+            </div>
+
+            <div class="slide">
+                <img src="{%static '/img/Kill Bill.png' %}" alt="imagem 8">
+            </div>
+            <!-- Fim carrossel-imagens -->
+
+            <!-- Navigation auto -->
+            <div class="navigation-auto">
+
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+                <div class="auto-btn7"></div>
+                <div class="auto-btn8"></div>
+
+
+            </div>
+
+
+         </div>
+
+         <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+            <label for="radio7" class="manual-btn"></label>
+            <label for="radio8" class="manual-btn"></label>
+
+
+         </div>
+
+       </div>
+
+       <script src="{%static '/script.js' %}"></script>
+
+
+
+    </section>
+    <section id="sobreNos">
+        <div class="sobreNos-container">
+            <h2 class="titulo-sobreNos">SOBRE NÓS</h2>
+            <div id="green-line"></div>
+            <p>
+                Bem-vinda ao Ada's Legacy, o seu destino cinematográfico feito por mulheres e para mulheres. Nós, quatro garotas apaixonadas por filmes e séries, decidimos unir nossos talentos e criar um espaço onde o universo audiovisual se encontra com o poder feminino. Aqui, você encontrará um acervo diversificado de filmes e séries cuidadosamente selecionados, que abraçam a força, a sensibilidade e a diversidade feminina.
+            </p>
+            <p>
+                Nosso objetivo é oferecer um refúgio para as mulheres explorarem histórias inspiradoras, personagens cativantes e narrativas que refletem a nossa diversidade. Ada's Legacy é uma homenagem à Ada Lovelace, uma pioneira no campo da computação e um símbolo de empoderamento feminino. Assim como Ada, buscamos deixar um legado de inclusão e representatividade através da arte.
+            </p>
+            <p> Aqui, você encontrará recomendações cuidadosamente elaboradas, análises perspicazes e entrevistas exclusivas com mulheres incríveis da indústria cinematográfica. Queremos proporcionar um espaço onde as vozes femininas são valorizadas e celebradas. Também incentivamos a participação ativa da nossa comunidade, pois acreditamos que juntas podemos construir um movimento inspirador.</p>
+            <p>
+                Então, junte-se a nós nesta jornada cinematográfica, onde cada filme e série tem o poder de desafiar, inspirar e entreter. Seja você uma cinéfila experiente ou uma exploradora em busca de novas histórias, o Ada's Legacy é o seu ponto de partida para descobrir a magia do cinema através da perspectiva feminina. Seja bem-vinda ao nosso legado!
+            </p>
+        </div>
+    </section>
+
+    <section id="dispositivos">
+            <h2 class="titulo-dispositivos">DISPOSITIVOS SUPORTADOS</h2>
+            <div class="dispositivos-container">
+                <div>
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <p>Celular</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                    <p>Tablet</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <p>Computador</p>
+                </div>
+            </div>
+    </section>
+
+    <footer id="rodape">
+        <div class="rodape-container">
+
+            <div class="links">
+                <li>
+                    <ul><a href="#">Termos de condições de uso</a></ul>
+                    <ul><a href="#">Políticas de privacidade</a></ul>
+                    <ul><a href="#">Central de ajuda</a></ul>
+                </li>
+            </div>
+
+             <div class="links">
+                <li>
+                    <ul><a href="https://www.linkedin.com/in/elle-gs/?locale=pt_BR" target="_blank"><i class="fa-brands fa-linkedin"></i><span>Desenvolvedora 1</span></a></ul>
+                    <ul><a href="https://www.linkedin.com/in/barbara-gomes-dias/" target="_blank"><i class="fa-brands fa-linkedin"></i><span>Desenvolvedora 2</span></a></ul>
+                    <ul><a href="https://www.linkedin.com/in/thaizesantana/" target="_blank"><i class="fa-brands fa-linkedin"></i><span>Desenvolvedora 3</span></a></ul>
+                    <ul><a href="https://www.linkedin.com/in/kauane-o-b18699164/" target="_blank"><i class="fa-brands fa-linkedin"></i><span>Desenvolvedora 4</span></a></ul>
+                </li>
+             </div>
+
+            <div class="links">
+                <p>Siga nosso projeto: </p>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="copy">
+            <i class="fa-regular fa-copyright"></i>
+            <p>Ada's Legacy 2023</p>
+        </div>     
+    </footer>
+</body>
+
+</html>

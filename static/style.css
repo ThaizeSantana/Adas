@@ -1,0 +1,406 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    
+}
+
+:root {
+    --verde: #317160;
+    --verdeFolha: #22732E;
+    --bege: #E6C894;
+    --marrom: #462222;
+    --preto: #262121;
+
+}
+
+
+
+body {
+    background-color: var(--preto);
+    color: whitesmoke;
+    overflow-x: hidden;
+}
+
+/******* HEADER *******/
+
+header {
+    background-color: rgba(0, 0, 0, 0.45);
+    box-shadow: black 0px 12px 93px ;
+    z-index: 3;
+    position: fixed;
+    width: 100vw;
+    backdrop-filter: blur(1.6px);
+}
+
+header img {
+    height: 100px;
+    padding-left: 30px;
+}
+
+header i {
+    display: flex;
+    float: right;
+    padding-top: 20px;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+/******* BANNER *******/
+
+
+#banner video {
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+     left: 0;
+    background-position-y: 0.05rem;
+    height: 110vh;
+    width: 100vw;
+    z-index: 1;
+    position: sticky;
+}
+
+#banner button {
+    position: relative;
+    z-index: 2;
+    color: var(--verdeFolha);
+    transform:translate(31vw, -45vh);
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    padding: 20px 50px;
+    border-radius: 60px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border: var(--verdeFolha) solid 3px;
+    transition: 0.2s ease-in-out;
+}
+
+#banner button:first-child {
+    margin-right: 9rem;
+}
+
+#banner button:hover {
+    background-color: var(--verdeFolha);
+    color: var(--preto);
+    border: var(--preto) 3px solid;
+    cursor: pointer;
+}
+
+/*******  PLANOS *******/
+
+.plano-container {
+    display: flex;
+    margin-top: 6rem;
+}
+
+.plano {
+    text-align: center;
+    line-height: 70px;
+    background-color: var(--verde);
+    margin: 20px;
+    width: 450px;
+    font-size: 35px;
+    padding: 40px;
+    border-radius: 60px;
+    transition:  all 0.5s ease-out;
+}
+.plano p {
+    margin-bottom: 50px;
+    
+}
+.plano ul {
+    list-style-type: none;
+    font-size: 27px;
+}
+
+.plano p {
+    font-family: 'Oswald', sans-serif;
+}
+
+.plano button {
+    background-color: #5f887d;;
+    color: var(--marrom);
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 50px;
+    width: 350px;
+    margin-top: 100px;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.5 ease-in-out;
+}
+
+.plano span {
+    opacity: 0.27;
+}
+.plano button:hover {
+    background-color: #97c59e;
+    cursor: pointer;
+    transform: scale(110%);
+}
+
+.plano:hover {
+    background-color: var(--verdeFolha);
+}
+
+/*******  ALGUNS TITULOS *******/
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    /* height: 500px; */
+    overflow:hidden;
+    height: 40em;
+    margin-top: 400px;
+      
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: 10px;
+    display: flex;
+    justify-content:center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+
+}
+
+.manual-btn:hover{
+    background-color: #317160;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0%
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%; 
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -100% ;
+}
+
+#radio6:checked ~ .first {
+    margin-left: -125%;
+}
+
+#radio7:checked ~ .first {
+    margin-left: -150%;
+}
+
+.navigation-auto div{
+    border: 2px solid #97c59e;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 50px;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #fff;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background-color: #fff;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+    background-color: #fff;
+}
+
+#radio7:checked ~ .navigation-auto .auto-btn7 {
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SOBRE NÓS */
+    #sobreNos {
+        color: white;
+        font-size: 23px;
+        margin: 180px;
+        height: 100vh;
+        line-height: 30px;
+    }
+
+    #sobreNos h2 {
+        font-family: 'Oswald', sans-serif;
+        margin-bottom: 10px;
+        color: var(--verde);
+    }
+
+    #sobreNos p {
+        padding-bottom: 30px;
+    }
+
+    #green-line {
+        height: 5px;
+        width: 15vw;
+        background-color: var(--verde);
+        margin: 18px 0 30px 15px ;
+    }
+
+/* DIPOSITIVOS SUPORTADOS */
+#dispositivos {
+    height: 110vh;
+    background-color: var(--preto);
+    padding-top: 50px;
+}
+
+.dispositivos-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+#dispositivos h2 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--verde);
+    margin-bottom: 80px;
+    padding-left: 180px;
+    font-size: 40px;
+}
+
+i {
+    color: white;
+    font-size: 250px;
+    padding: 0 118px;
+}
+
+#dispositivos p {
+    margin-top: 50px;
+    font-size: 23px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--verde);
+    height: 70vh;
+}
+
+.rodape-container {
+    display: flex;
+    list-style-type: none;
+    width: 200vh;
+    justify-content: center;
+}
+
+.links {
+    text-align: center;
+    margin: 40px 5px ;
+    line-height: 50px;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+    padding: 0 30px;
+    text-align: left;
+}
+
+.links span {
+    margin-left: -85px;
+}
+
+.links i {
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.copy {
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+    opacity: 0.5;
+    padding-top: 50px;
+}
+
+.copy p {
+    margin-left: -25px;
+}
+
+.copy i {
+    font-size: 13px;
+}

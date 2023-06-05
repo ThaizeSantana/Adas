@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    
+}
+
+:root {
+    --verde: #317160;
+    --verdeFolha: #22732E;
+    --bege: #E6C894;
+    --marrom: #462222;
+    --preto: #262121;
+}
+
+body {
+    background-color: var(--preto);
+    color: var(--verdeFolha);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+.container h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
+}
+
+.container input {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 50px;
+    width: 500px;
+    padding: 20px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 50px;
+    color: white;
+}
+
+.container button {
+    font-size: 25px;
+    border: none;
+    margin: 30px 20px;
+    padding: 10px;
+    color: var(--preto);
+    background-color: var(--verdeFolha);
+    cursor: pointer;
+}
+
+.recover {
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--bege);
+}
+
+.recover a {
+    color: var(--verdeFolha);
+    text-decoration: none;
+}
+
+.recover a:hover {
+    filter: brightness(150%);
+}
+
+.recover p {
+    padding-bottom: 10px;
+}

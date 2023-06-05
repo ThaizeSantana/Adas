@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{%static '/img/Icon Ada.png'%}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static '/cadastro.css' %}">
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+    <div id="imgCanto">
+        <img src="{%static '/img/Icon Ada.png' %}">
+    </div>
+    <div class="container">
+        <div id="cadastro" class="cadastro">
+            <h1 class="titulo1">CRIAR CONTA</h1>
+        </div>
+
+        <div class="form-container">
+            <div class="line">
+                <div class="container-line">
+                    <form action="" method="post"> <!-- #enviar -->
+    
+                        <div id="input-nome" class="input-nome">
+                         <input name="nome" type="text" placeholder="Nome" required="required">
+                        </div>
+                    
+                        <div id="input-sobrenome" class="input-sobrenome">
+                            <input name="sobrenome" type="text" placeholder="Sobrenome" required="required">
+                        </div>
+                </div>
+            </div>
+            <div class="line">
+                <div id="input-email" class="input-email">
+                    <input name="email" type="email" placeholder="E-mail" required="required">
+                </div>
+            </div>
+
+            <div class="line">
+                <div id="input-senha" class="input-senha">
+                    <input name="senha" type="password" placeholder="Senha" required="required">
+                    <!-- <p>A senha deve conter no minimo 8 caracteres</p> -->
+                </div>
+            </div>
+            <div id="botao-enviar" class="botao-enviar">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+        </div>
+        </div>
+
+
+</body>
+
+</html>

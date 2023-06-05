@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    
+}
+
+:root {
+    --verde: #317160;
+    --verdeFolha: #22732E;
+    --bege: #E6C894;
+    --marrom: #462222;
+    --preto: #262121;
+}
+
+body {
+    background-color: var(--preto);
+    color: var(--verdeFolha);
+    display: flex;
+}
+
+#imgCanto {
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+
+.container {
+    margin-top: 10vh;
+    margin-top: 10rem;
+    font-size: 25px;
+    margin-left: 9rem;
+}
+
+.container h1 {
+    font-family: "Oswald", sans-serif;
+}
+
+.container input {
+    font-size: 25px;
+    color: white;
+    background-color: var(--preto);
+    border: none;
+    border-bottom: var(--verdeFolha) solid 1px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.container input:focus {
+    border-bottom: var(--bege) solid 1px;
+    outline: none;
+}
+
+button {
+    background-color: var(--verdeFolha);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
