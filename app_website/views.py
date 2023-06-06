@@ -54,8 +54,6 @@ def  login(request):
 @login_required(login_url="login/")
 def filmes(request):
          return render(request, 'filmes.html')
-<<<<<<< HEAD
-=======
 
 
 def estrelas(request):
@@ -72,5 +70,4 @@ def irmaes(request):
 def insecure(request):
          return render(request, 'insecure.html')
     
->>>>>>> 1bf802ee1b90acee921457130c4a2bdcc65b4d69
     
