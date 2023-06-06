@@ -191,7 +191,7 @@ header i {
 }
 
 .manual-btn {
-    border: 2px solid #317160;
+    border: 2px solid #fff;
     padding: 4px;
     border-radius: 10px;
     cursor: pointer;
@@ -242,7 +242,7 @@ header i {
 }
 
 .navigation-auto div{
-    border: 2px solid #262121;
+    border: 2px solid #fff;
     padding: 4px;
     border-radius: 10px;
     cursor: pointer;
@@ -291,7 +291,7 @@ header i {
     background-color: #fff;
 }
 
-#radio8:checked ~ .navigation-auto .auto-btn7 {
+#radio8:checked ~ .navigation-auto .auto-btn8 {
     background-color: #fff;
 }
 

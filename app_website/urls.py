@@ -7,4 +7,9 @@ urlpatterns = [
     path('cadastro/', views.cadastro, name='cadastro'),
     path('login/', views.login, name='login'),
     path('filmes/', views.filmes),
+    path('estrelas/', views.estrelas),
+    path('insecure/', views.insecure),
+    path('kakegurui/', views.kakegurui),
+    path('irmaes/', views.irmaes),
+    
 ]

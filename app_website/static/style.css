@@ -204,7 +204,7 @@ header i {
 }
 
 .manual-btn:hover{
-    background-color: #317160;
+    background-color: #fff;
 }
 
 #radio1:checked ~ .first{
@@ -235,8 +235,12 @@ header i {
     margin-left: -150%;
 }
 
+#radio8:checked ~ .first {
+    margin-left: -175%;
+}
+
 .navigation-auto div{
-    border: 2px solid #97c59e;
+    border: 2px solid #fff;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -284,6 +288,11 @@ header i {
 #radio7:checked ~ .navigation-auto .auto-btn7 {
     background-color: #fff;
 }
+
+#radio8:checked ~ .navigation-auto .auto-btn8 {
+    background-color: #fff;
+}
+
 
 
 
