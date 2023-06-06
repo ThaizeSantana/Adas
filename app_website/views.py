@@ -10,3 +10,6 @@ def cadastro(request):
 
 def  login(request):
     return render(request, 'login.html')
+
+def filmes(request):
+    return render(request, 'filmes.html')

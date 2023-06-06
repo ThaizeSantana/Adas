@@ -291,9 +291,19 @@ header i {
     background-color: #fff;
 }
 
-#radio8:checked ~ .navigation-auto .auto-btn8 {
+#radio8:checked ~ .navigation-auto .auto-btn7 {
     background-color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* SOBRE NÓS */
 
