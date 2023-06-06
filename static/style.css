@@ -39,7 +39,7 @@ header {
 }
 
 header img {
-    height: 100px;
+    height: 80px;
     padding-left: 30px;
 }
 
@@ -71,7 +71,7 @@ header i {
     z-index: 2;
     color: var(--verdeFolha);
     transform:translate(31vw, -45vh);
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Oswald', sans-serif;
     padding: 20px 50px;
     border-radius: 60px;
@@ -96,26 +96,28 @@ header i {
 .plano-container {
     display: flex;
     margin-top: 6rem;
+    justify-content: center;
 }
 
 .plano {
     text-align: center;
-    line-height: 70px;
+    line-height: 60px;
     background-color: var(--verde);
-    margin: 20px;
-    width: 450px;
-    font-size: 35px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 370px;
+    font-size: 25px;
     padding: 40px;
     border-radius: 60px;
     transition:  all 0.5s ease-out;
 }
 .plano p {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     
 }
 .plano ul {
     list-style-type: none;
-    font-size: 27px;
+    font-size: 20px;
 }
 
 .plano p {
@@ -125,11 +127,10 @@ header i {
 .plano button {
     background-color: #5f887d;;
     color: var(--marrom);
-    font-size: 30px;
+    font-size: 20px;
     padding: 20px;
+    width: 200px;
     margin-top: 50px;
-    width: 350px;
-    margin-top: 100px;
     border: none;
     border-radius: 20px;
     transition: all 0.5 ease-in-out;
@@ -184,17 +185,18 @@ header i {
 .manual-navigation{
     position: absolute;
     width: 800px;
-    margin-top: 10px;
+    margin-top: -40px;
     display: flex;
     justify-content:center;
 }
 
 .manual-btn {
-    border: 2px solid #fff;
-    padding: 5px;
+    border: 2px solid #317160;
+    padding: 4px;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
+    margin-top: 40px;
 
 }
 
@@ -235,13 +237,17 @@ header i {
     margin-left: -150%;
 }
 
+#radio8:checked ~ .first {
+    margin-left: -175%;
+}
+
 .navigation-auto div{
-    border: 2px solid #97c59e;
-    padding: 5px;
+    border: 2px solid #262121;
+    padding: 4px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .navigation-auto {
@@ -285,45 +291,42 @@ header i {
     background-color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
+#radio8:checked ~ .navigation-auto .auto-btn8 {
+    background-color: #fff;
+}
 
 /* SOBRE NÓS */
-    #sobreNos {
-        color: white;
-        font-size: 23px;
-        margin: 180px;
-        height: 100vh;
-        line-height: 30px;
-    }
 
-    #sobreNos h2 {
-        font-family: 'Oswald', sans-serif;
-        margin-bottom: 10px;
-        color: var(--verde);
-    }
+#sobreNos {
+    color: white;
+    font-size: 20px;
+    margin: 180px;
+    height: 90vh;
+    line-height: 30px;
+}
 
-    #sobreNos p {
-        padding-bottom: 30px;
-    }
+#sobreNos h2 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+    color: var(--verde);
+}
 
-    #green-line {
-        height: 5px;
-        width: 15vw;
-        background-color: var(--verde);
-        margin: 18px 0 30px 15px ;
-    }
+#sobreNos p {
+    padding-bottom: 30px;
+}
+
+#green-line {
+    height: 5px;
+    width: 15vw;
+    background-color: var(--verde);
+    margin: 18px 0 30px 15px ;
+}
+
 
 /* DIPOSITIVOS SUPORTADOS */
+
 #dispositivos {
-    height: 110vh;
+    height: 90vh;
     background-color: var(--preto);
     padding-top: 50px;
 }
@@ -340,12 +343,12 @@ header i {
     color: var(--verde);
     margin-bottom: 80px;
     padding-left: 180px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 i {
     color: white;
-    font-size: 250px;
+    font-size: 150px;
     padding: 0 118px;
 }
 

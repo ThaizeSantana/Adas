@@ -24,6 +24,10 @@ body {
     display: flex;
 }
 
+img {
+    height: 27rem;
+}
+
 #imgCanto {
     margin-left: 2rem;
     margin-top: 5rem;
@@ -32,7 +36,7 @@ body {
 .container {
     margin-top: 10vh;
     margin-top: 10rem;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 9rem;
 }
 
@@ -41,7 +45,7 @@ body {
 }
 
 .container input {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     background-color: var(--preto);
     border: none;
