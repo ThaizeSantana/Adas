@@ -54,4 +54,20 @@ def  login(request):
 @login_required(login_url="login/")
 def filmes(request):
          return render(request, 'filmes.html')
+
+
+def estrelas(request):
+         return render(request, 'estrelas.html')
+
+
+def kakegurui(request):
+         return render(request, 'kakegurui.html')
+         
+def irmaes(request):
+         return render(request, 'irmaes.html')
+    
+
+def insecure(request):
+         return render(request, 'insecure.html')
+    
     

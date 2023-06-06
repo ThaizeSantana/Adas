@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+{% load static %}
+
 <html lang="pt-br">
 
 <head>
@@ -20,7 +23,7 @@
     </div>
 
     <div class="img-insecure" id="img-insecure">
-        <img src="\app_website\static\img\insecure.jpg">
+        <img src="{%static '\img\insecure.jpg' %}">
     </div>
 
     <div class="botao-insecure" id="botao-insecure">
