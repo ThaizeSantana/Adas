@@ -13,16 +13,16 @@
 </head>
 
 <body>
-    <form>
+    <form action="{% url 'login'  %}" method="POST"> {% csrf_token %}
         <div class="container">
             <h1 id="tituloLogin">Você tem uma conta na Ada's Legacy?</h1>
 
-            <div class="email">
-                <input type="email" placeholder="Endereço de e-mail" required="required">
+            <div id="input-nome" class="input-nome">
+                <input name="username" type="text" placeholder="Nome" required="required">
             </div>
         
             <div class="senha">
-                <input type="password" placeholder="Senha" required>
+                <input type="password" placeholder="Senha" required name="senha">
             </div>
         
             <div class="botaoLogin">

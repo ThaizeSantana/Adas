@@ -25,14 +25,15 @@
         <div class="form-container">
             <div class="line">
                 <div class="container-line">
-                    <form action="" method="post"> <!-- #enviar -->
+                    <form action="{% url 'cadastro' %}" method="POST">  {% csrf_token %} 
+                        <!-- #enviar -->
     
                         <div id="input-nome" class="input-nome">
-                         <input name="nome" type="text" placeholder="Nome" required="required">
+                         <input name="username" type="text" placeholder="Nome" required="required">
                         </div>
                     
                         <div id="input-sobrenome" class="input-sobrenome">
-                            <input name="sobrenome" type="text" placeholder="Sobrenome" required="required">
+                            <input name="lastname" type="text" placeholder="Sobrenome" required="required">
                         </div>
                 </div>
             </div>
